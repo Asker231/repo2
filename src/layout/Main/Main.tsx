@@ -7,7 +7,7 @@ const Main = () => {
       <Header $padding={10}>
         <Groups $gap={10} $alignItems={'center'}>
           <Link to={"/"}>Сделки</Link>
-          <Link to={"/log"}>Журнал</Link>
+          <Link to={"/log"}>Журнал</Link>s
         </Groups>
       </Header>
       <div>
