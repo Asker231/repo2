@@ -8,8 +8,18 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+     "typecheck": "tsc --noEmit"
   },
+"lint-staged": {
+  "*.{ts,tsx}": [
+    "eslint --fix",
+    "prettier --write"
+  ],
+  "*.{json,md,css,scss}": [
+    "prettier --write"
+  ]
+},
   "dependencies": {
     "@ant-design/icons": "^6.1.1",
     "@reduxjs/toolkit": "^2.11.2",
@@ -22,8 +32,8 @@
     "styled-components": "^6.3.12"
   },
   "devDependencies": {
-    "@commitlint/cli": "^21.2.3",
-    "@commitlint/config-conventional": "^21.2.3",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
