@@ -9,17 +9,17 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "prepare": "husky",
-     "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit"
   },
-"lint-staged": {
-  "*.{ts,tsx}": [
-    "eslint --fix",
-    "prettier --write"
-  ],
-  "*.{json,md,css,scss}": [
-    "prettier --write"
-  ]
-},
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,scss}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "@ant-design/icons": "^6.1.1",
     "@reduxjs/toolkit": "^2.11.2",
